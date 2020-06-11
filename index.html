@@ -46,13 +46,24 @@
 						<div class="card-body">
 							<p class="font-weight-bold">Read the statement carefully and indicate whether it is True or False</p>
 							<p id="text_statement" class="font-italic">Javascript variables are containers for storing data values.</p>
+							<div class="text-center">
+								<iframe id="iframe_video" width="560" height="315" src="https://www.youtube.com/embed/tG35R8F2j8k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							</div>
 							<div class="form-check">
 								<input class="form-check-input" type="radio" name="quizzlet_input" id="input_1" value="option1" checked />
 								<label class="form-check-label" for="input_1">True</label>
 							</div>
-							<div class="form-check mb-3">
+							<div class="form-check">
 								<input class="form-check-input" type="radio" name="quizzlet_input" id="input_2" value="option2" />
 								<label class="form-check-label" for="input_2">False</label>
+							</div>
+							<div class="form-check">
+								<input class="form-check-input" type="radio" name="quizzlet_input" id="input_3" value="option3" />
+								<label class="form-check-label" for="input_3">Multi-choice item 3</label>
+							</div>
+							<div class="form-check mb-3">
+								<input class="form-check-input" type="radio" name="quizzlet_input" id="input_4" value="option4" />
+								<label class="form-check-label" for="input_4">Multi-choice item 4</label>
 							</div>
 							<div id="cont_success" class="alert alert-success d-none" role="alert">
 								Your answer is correct.
@@ -76,6 +87,9 @@
 									</button>
 									<button id="btn_hint" type="button" class="btn btn-secondary">
 										<i class="fas fa-question"></i>
+									</button>
+									<button id="btn_question" type="button" class="btn btn-secondary">
+										<i class="fas fa-info"></i>
 									</button>
 									<button id="btn_next" type="button" class="btn btn-secondary"><i class="fas fa-chevron-right"></i></button>
 								</div>
@@ -110,6 +124,8 @@
 			integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
 			crossorigin="anonymous"
 		></script>
-        <script src="js/variable.js"></script>
+		<script src="js/variable.js"></script>
+		<script src="js/data.js"></script>
+		<script src="js/listener.js"></script>
 	</body>
 </html>

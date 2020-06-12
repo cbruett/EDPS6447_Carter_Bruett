@@ -43,37 +43,23 @@ var array_questions = [
 		help: ["I dont have any help for you."],
 	},
 	{
-		statement: "Select the correct option amongst the examples listed below for defining a JavaScript object.",
-		topic: "javascript",
-		sub_topic: "object",
+		statement: "Which of the following is not a malignant salivary gland tumor:",
+		topic: "Salivary Gland Tumors",
+		sub_topic: "Malignant vs Benign",
 		answer_key: "option1",
-		hint: "https://www.w3schools.com/js/js_objects.asp",
+		hint: "There are no available hints",
 		type: "multiple_choice",
 		labels: [
-			"var answer = {value: 'I am the correct answer!'};",
-			"var answer = {value = 'I am the correct answer!'};",
-			"var answer = (value: 'I am the correct answer!');",
-			"var answer = {value: 'I am the correct answer!'}",
+			"var answer = Pleomorphic Adenoma;",
+			"var answer = Mucoepidermoid Carcinoma;",
+			"var answer = Adenoid Cystic Carcinoma,
+			"var answer = Acinic Cell Carcinoma",
 		],
 		video: { display: "false", source: "N/A" },
 		help: [
-			"Text strings in values assigned to properties are denoted by quotes.",
-			"Don't forget the semicolon at the end of the line.",
-			"Declarations of properties typically rely on a colon symbol ':'.",
-		],
+			"No help is availabe"],
 	},
-	{
-		statement: "JavaScript variables can be declared using the let keyword - it will have block scope, and can only be accessed from inside the function.",
-		topic: "javascript",
-		sub_topic: "variable",
-		answer_key: "option1",
-		hint: "https://www.w3schools.com/js/js_let.asp",
-		type: "true_false",
-		labels: ["True", "False", "N/A", "N/A"],
-		video: { display: "true", source: "https://www.youtube.com/embed/q8SHaDQdul0" },
-		help: ["Sorry, I don't have any additional information to share for this question."],
-	},
-];
+	];
 
 var array_answers = [];
 

@@ -22,48 +22,37 @@
 		<!-- Quizzlet Stylesheet -->
 		<link href="css/styles.css" rel="stylesheet" />
 
-		<title>EDPS 6447 Summer 2020</title>
+		<title>Path Wars, the Quiz Game</title>
 	</head>
 	<body>
 		<div class="container-fluid" style="height: 100vh;">
 			<div class="row justify-content-center align-items-center h-100">
-				<div id="sec_landing" class="col-8 col-md-6 col-lg-4">
+				<div id="sec_landing" class="col-8 col-md-6 col-lg-4 d-none">
 					<div class="card">
-						<div class="card-header">QUIZ WARS</div>
+						<div class="card-header">PATH WARS</div>
 						<div class="card-body">
 							<form>
 								<label for="input_username">Enter your username: </label>
-								<input id="input_username" class="form-control" type="text" placeholder="Han Solo">
+								<input id="input_username" class="form-control" type="text" placeholder="Bob Gorlin">
 							</form>
-							<button id="btn_start" type="button" class="btn btn-secondary w-100 mt-3">Start</i></button>
-							<button id="btn_tutorial" type="button" class="btn btn-secondary w-100 mt-1" disabled>Tutorial</i></button>
+							<button id="btn_start" type="button" class="btn btn-secondary w-100 mt-3"><i>Start</i></button>
+							<button id="btn_tutorial" type="button" class="btn btn-secondary w-100 mt-1" disabled><i>Tutorial</i></button>
 						</div>
 					</div>
 				</div>
-				<div id="sec_quiz" class="col-10 col-md-8 col-lg-6">
+				<div id="sec_quiz" class="col-10 col-md-8 col-lg-6 d-none">
 					<div class="card">
-						<div class="card-header">QUIZ WARS</div>
+						<div class="card-header">PATH WARS</div>
 						<div class="card-body">
-							<p class="font-weight-bold">Read the statement carefully and indicate whether it is True or False</p>
-							<p id="text_statement" class="font-italic">Javascript variables are containers for storing data values.</p>
-							<div class="text-center">
-								<iframe id="iframe_video" width="560" height="315" src="https://www.youtube.com/embed/tG35R8F2j8k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-							</div>
+							<p class="font-weight-bold">Read the statement carefully and select the most correct answer.</p>
+							<p id="text_statement" class="font-italic">A leukoplakia is a premalignant lesion and should always be biopsied</p>
 							<div class="form-check">
 								<input class="form-check-input" type="radio" name="quizzlet_input" id="input_1" value="option1" checked />
 								<label class="form-check-label" for="input_1">True</label>
 							</div>
-							<div class="form-check">
+							<div class="form-check mb-3">
 								<input class="form-check-input" type="radio" name="quizzlet_input" id="input_2" value="option2" />
 								<label class="form-check-label" for="input_2">False</label>
-							</div>
-							<div class="form-check">
-								<input class="form-check-input" type="radio" name="quizzlet_input" id="input_3" value="option3" />
-								<label class="form-check-label" for="input_3">Multi-choice item 3</label>
-							</div>
-							<div class="form-check mb-3">
-								<input class="form-check-input" type="radio" name="quizzlet_input" id="input_4" value="option4" />
-								<label class="form-check-label" for="input_4">Multi-choice item 4</label>
 							</div>
 							<div id="cont_success" class="alert alert-success d-none" role="alert">
 								Your answer is correct.
@@ -82,25 +71,24 @@
 									><i class="fas fa-thumbs-down ml-1 mr-2"></i>
 								</div>
 								<div class="btn-group" role="group" aria-label="Basic example">
-									<button id="btn_previous" type="button" class="btn btn-secondary">
+									<button id="btn_previous" type="button" class="btn btn-secondary" disabled>
 										<i class="fas fa-chevron-left"></i>
 									</button>
 									<button id="btn_hint" type="button" class="btn btn-secondary">
 										<i class="fas fa-question"></i>
 									</button>
-									<button id="btn_question" type="button" class="btn btn-secondary">
-										<i class="fas fa-info"></i>
-									</button>
+                                    <button id="btn_help" type="button" class="btn btn-seconday">
+                                        <i class = "fas fa-info"></i>
+                                    </button>
 									<button id="btn_next" type="button" class="btn btn-secondary"><i class="fas fa-chevron-right"></i></button>
 								</div>
 							</div>
 						</div>
 					</div>
 					<div class="alert alert-warning mt-3">
-						<span><i class="fas fa-jedi mb-3"></i> Jedi Star Coder</span>
+						<span><i class="fas fa-jedi mb-3"></i> Pathologist Expert Tips</span>
 						<p id="text_agent_dialogue">
-							Javascript is what gives a coder his power. It's a programming field created by all living developers. It surrounds us and
-							penetrates us. It binds your one-day Amazon deliveries.
+							If you can recognize the features of a lesion, you can provide a provisional diagnosis. Understand the tissues, and you understand pathology.
 						</p>
 					</div>
 				</div>
@@ -127,5 +115,6 @@
 		<script src="js/variable.js"></script>
 		<script src="js/data.js"></script>
 		<script src="js/listener.js"></script>
+		<script src="js/controller.js"></script>
 	</body>
 </html>
